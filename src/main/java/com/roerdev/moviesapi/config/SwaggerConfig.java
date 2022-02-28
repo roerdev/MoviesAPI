@@ -41,7 +41,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Swagger Api Doc - Assert Solutions")
+                .title("Swagger Api Doc - Alkemy")
                 .description("Prueba API REST para Alkemy")
                 .contact(new Contact("Erick Rodriguez", null, "erodriguezven@gmail.com"))
                 .version("API Version: 0.0.1")

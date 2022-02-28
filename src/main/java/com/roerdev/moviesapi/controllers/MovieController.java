@@ -22,7 +22,7 @@ public class MovieController {
 
     private final MovieService movieService;
 
-    @ApiOperation(value = "Servicio para obtener un personaje por ID")
+    @ApiOperation(value = "Servicio para obtener una película por ID")
     @GetMapping("/{id}")
     @ResponseBody
     public ResponseEntity<?> getMovie (@PathVariable UUID id){
@@ -41,7 +41,7 @@ public class MovieController {
         }
     }
 
-    @ApiOperation(value = "Servicio para obtener todos los pesonajes registrados")
+    @ApiOperation(value = "Servicio para obtener todas las películas registradas")
     @GetMapping
     @ResponseBody
     public ResponseEntity<?> getAllMovie(
@@ -64,7 +64,7 @@ public class MovieController {
         }
     }
 
-    @ApiOperation(value = "Servicio para guardar un nuevo personaje")
+    @ApiOperation(value = "Servicio para guardar una nueva película")
     @PostMapping
     @ResponseBody
     public ResponseEntity<?> saveMovie(@RequestBody MovieDetailDto movie){
@@ -83,7 +83,7 @@ public class MovieController {
         }
     }
 
-    @ApiOperation(value = "Servicio para actualizar un usuario")
+    @ApiOperation(value = "Servicio para actualizar una película")
     @PutMapping("/{id}")
     @ResponseBody
     public ResponseEntity<?> updateMovie (@PathVariable UUID id, @RequestBody MovieDetailDto movie){
@@ -102,7 +102,7 @@ public class MovieController {
         }
     }
 
-    @ApiOperation(value = "Servicio para eliminar logicamente un usuario")
+    @ApiOperation(value = "Servicio para eliminar logicamente una película")
     @DeleteMapping("/{id}")
     @ResponseBody
     public ResponseEntity<?> deleteMovie (@PathVariable UUID id){
